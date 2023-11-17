@@ -1,17 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@media print {
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: auto;
+    margin: 0mm;
+
+    .date,
+    .time,
+    title {
+      display: none !important;
+    }
+  }
+}
+
 :root {
   --body-background-color: lightblue;
   --white: #fff;
   --black: black;
   --light-blue: #03a9f4;
-  --left-side-background: #003147;
+  --dark-blue: #003147;
+  --dark-gray: #333;
   --main__figure-shadow: rgba(0, 0, 0, .25);
   --text-border-bottom: rgba(255, 255, 255, .2);
   --telegram: url("../img/icons/telegram.svg");
   --github: url("../img/icons/github.svg");
   --mail: url("../img/icons/email.svg");
   --location: url("../img/icons/location-pin.svg");
+  --gaming: url("../img/icons/gaming.svg");
+  --cooking: url("../img/icons/cooking.svg");
+  --books: url("../img/icons/books.svg");
+  --hiking: url("../img/icons/hiking.svg");
 }
 
 body {
@@ -39,17 +62,19 @@ li {
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
-  height: 100%;
-  min-width: 62.5rem;
-  min-height: 62.5rem;
+  width: 62.5rem;
+  height: 77.5rem;
   background: var(--white);
   box-shadow: 0 2.1875rem 3.4375rem var(--main__figure-shadow);
+  margin: 2.5rem;
 }
 
 ._left-side {
+  max-width: 1fr;
+  min-height: 62.5rem;
   position: relative;
-  background: var(--left-side-background);
-  padding: 2.5rem;
+  background: var(--dark-blue);
+  padding: 2.5rem 5rem;
 }
 
 .profile__text {
@@ -79,20 +104,17 @@ li {
 
 ._first-row {
   color: var(--white);
-  font-size: 24px;
   margin-top: 1.25rem;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.5em;
 }
 
-._second-row {
-  font-size: .8em;
-}
+.contact-info {
+  display: flex;
+  width: 250px;
+  text-align: start;
 
-.contact-info-header {
-  color: var(--white);
-  text-transform: uppercase;
 }
 
 .contact_text {
@@ -139,21 +161,37 @@ li {
   padding-top: 32px;
 }
 
-.education-info-header {
-  color: var(--white);
-  text-transform: uppercase;
-}
-
 .education-header {
   color: var(--light-blue);
 }
 
 .education-text-row-1 {
   color: var(--white);
+  line-height: 1.5rem;
 }
 
 .education-text-row-2 {
   color: var(--white);
+}
+
+.languages-info {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  line-height: 16px;
+  padding-top: 5px;
+}
+
+.languages-info-header {
+  color: var(--white);
+}
+
+.languages-header {
+  color: var(--white);
+}
+
+.languages-info-text-row-1 {
+  color: var(--light-blue);
 }
 
 ._right-side {
@@ -162,10 +200,128 @@ li {
   padding: 2.5rem;
 }
 
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.expirience-box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.expirience-info {
+  min-width: 150px;
+  text-transform: uppercase;
+  color: #848c90;
+  text-align: center;
+}
+
+.expirinece-text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+}
+
+.skill-box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.skill-box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+
+.percent {
+  position: relative;
+  top: 24.5px;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+
+.percent div {
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #03a9f4;
+}
+
+.yourself ul {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gaming-position {
+  position: relative;
+  bottom: 10px;
+}
+
+.icon-gaming {
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  margin-right: 3px;
+  content: var(--gaming);
+  vertical-align: middle;
+}
+
+.icon-cooking {
+  position: relative;
+  left: 4px;
+  margin-right: 8px;
+  content: var(--cooking);
+  vertical-align: middle;
+}
+
+.icon-books {
+  position: relative;
+  left: 4px;
+  margin-right: 8px;
+  content: var(--books);
+  vertical-align: middle;
+}
+
+.icon-hiking {
+  position: relative;
+  left: 4px;
+  margin-right: 8px;
+  content: var(--hiking);
+  vertical-align: middle;
+}
+
 /* mixin */
 
 .font-poppins {
   font-family: 'Poppins', sans-serif;
+}
+
+.left-side__header {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.right-side__header {
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.right-side__text {
+  color: var(--dark-gray);
 }
 
 .text_size-14 {
@@ -178,18 +334,6 @@ li {
 
 .text_size-24 {
   font-size: 24px;
-}
-
-.text_size-42 {
-  font-size: 42px;
-}
-
-.text_size-50 {
-  font-size: 50px;
-}
-
-.text_size-85 {
-  font-size: 85px;
 }
 
 .text_weight-300 {

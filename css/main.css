@@ -4,6 +4,7 @@
   --body-background-color: lightblue;
   --white: #fff;
   --black: black;
+  --light-blue: #03a9f4;
   --left-side-background: #003147;
   --main__figure-shadow: rgba(0, 0, 0, .25);
   --text-border-bottom: rgba(255, 255, 255, .2);
@@ -34,26 +35,21 @@ li {
   box-sizing: border-box;
 }
 
-.font-poppins {
-  font-family: 'Poppins', sans-serif;
-}
-
 .main__figure {
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
   height: 100%;
-  min-width: 1000px;
-  min-height: 1000px;
+  min-width: 62.5rem;
+  min-height: 62.5rem;
   background: var(--white);
-  box-shadow: 0 35px 55px var(--main__figure-shadow);
-  margin: 50px;
+  box-shadow: 0 2.1875rem 3.4375rem var(--main__figure-shadow);
 }
 
 ._left-side {
   position: relative;
   background: var(--left-side-background);
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .profile__text {
@@ -61,13 +57,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid var(--text-border-bottom);
+  border-bottom: .0625rem solid var(--text-border-bottom);
 }
 
 .profile__picture {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -83,65 +79,127 @@ li {
 
 ._first-row {
   color: var(--white);
-  font-size: 1.5rem;
-  margin-top: 20px;
+  font-size: 24px;
+  margin-top: 1.25rem;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
   line-height: 1.5em;
 }
 
 ._second-row {
   font-size: .8em;
-  font-weight: 300;
 }
 
 .contact-info-header {
   color: var(--white);
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 .contact_text {
   color: var(--white);
-  font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 24px;
 }
 
 .icon-telegram {
   position: relative;
-  left: .250rem;
-  margin-right: .5rem;
+  left: 4px;
+  margin-right: 8px;
   content: var(--telegram);
   vertical-align: middle;
 }
 
 .icon-github {
   position: relative;
-  left: .25rem;
-  margin-right: .62rem;
+  left: 4px;
+  margin-right: 9.92px;
   content: var(--github);
   vertical-align: middle;
 }
 
 .icon-mail {
   position: relative;
-  left: .2rem;
-  margin-right: .58125rem;
+  left: 3.2px;
+  margin-right: 9.3px;
   content: var(--mail);
   vertical-align: middle;
 }
 
 .icon-location {
   position: relative;
-  left: .2rem;
-  margin-right: .58125rem;
+  left: 3.2px;
+  margin-right: 9.3px;
   content: var(--location);
   vertical-align: middle;
+}
+
+.education-info {
+  display: flex;
+  gap: 16px;
+  line-height: 16px;
+  padding-top: 32px;
+}
+
+.education-info-header {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.education-header {
+  color: var(--light-blue);
+}
+
+.education-text-row-1 {
+  color: var(--white);
+}
+
+.education-text-row-2 {
+  color: var(--white);
 }
 
 ._right-side {
   position: relative;
   background: var(--white);
-  padding: 40px;
+  padding: 2.5rem;
+}
+
+/* mixin */
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text_size-14 {
+  font-size: 14px;
+}
+
+.text_size-20 {
+  font-size: 20px;
+}
+
+.text_size-24 {
+  font-size: 24px;
+}
+
+.text_size-42 {
+  font-size: 42px;
+}
+
+.text_size-50 {
+  font-size: 50px;
+}
+
+.text_size-85 {
+  font-size: 85px;
+}
+
+.text_weight-300 {
+  font-weight: 300;
+}
+
+.text_weight-600 {
+  font-weight: 600;
+}
+
+.cursor_pointer {
+  cursor: pointer;
 }

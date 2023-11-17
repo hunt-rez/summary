@@ -35,6 +35,10 @@
   --cooking: url("../img/icons/cooking.svg");
   --books: url("../img/icons/books.svg");
   --hiking: url("../img/icons/hiking.svg");
+  --html: url("../img/icons/html.svg");
+  --css: url("../img/icons/css.svg");
+  --js: url("../img/icons/js.svg");
+  --ph: url("../img/icons/ph.svg");
 }
 
 body {
@@ -63,15 +67,14 @@ li {
   grid-template-columns: 1fr 2fr;
   position: relative;
   width: 62.5rem;
-  height: 77.5rem;
+  max-height: 75.5rem;
   background: var(--white);
   box-shadow: 0 2.1875rem 3.4375rem var(--main__figure-shadow);
   margin: 2.5rem;
 }
 
 ._left-side {
-  max-width: 1fr;
-  min-height: 62.5rem;
+  max-height: 71.5rem;
   position: relative;
   background: var(--dark-blue);
   padding: 2.5rem 5rem;
@@ -158,7 +161,7 @@ li {
   display: flex;
   gap: 16px;
   line-height: 16px;
-  padding-top: 32px;
+  padding-top: 15px;
 }
 
 .education-header {
@@ -174,12 +177,61 @@ li {
   color: var(--white);
 }
 
-.languages-info {
+.toolstack {
+  width: 307px;
+  height: 127px;
+  margin-bottom: 20px;
+}
+
+.toolstack ul {
+  width: 310px;
+  height: 80px;
   display: flex;
   flex-direction: row;
-  gap: 16px;
-  line-height: 16px;
-  padding-top: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.625rem;
+}
+
+.toolstack li {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.icon-html {
+  position: relative;
+  margin-bottom: 12px;
+  content: var(--html);
+  vertical-align: middle;
+}
+
+.icon-css {
+  position: relative;
+  margin-bottom: 12px;
+  content: var(--css);
+  vertical-align: middle;
+}
+
+.icon-js {
+  position: relative;
+  margin-bottom: 12px;
+  content: var(--js);
+  vertical-align: middle;
+}
+
+.icon-ph {
+  position: relative;
+  margin-bottom: 12px;
+  content: var(--ph);
+  vertical-align: middle;
+}
+
+.languages-info ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
 }
 
 .languages-info-header {
@@ -195,13 +247,14 @@ li {
 }
 
 ._right-side {
+  max-height: 71.5rem;
   position: relative;
   background: var(--white);
-  padding: 2.5rem;
+  padding: 2.5rem 4.5rem;
 }
 
 .about {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .about:last-child {
@@ -246,7 +299,7 @@ li {
   top: 24.5px;
   width: 100%;
   height: 10px;
-  background: #f0f0f0;
+  background: #dad6d6;
 }
 
 .percent div {
@@ -262,6 +315,11 @@ li {
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.yourself li {
+  color: #848c99;
+  font-weight: 400;
 }
 
 .gaming-position {
@@ -296,8 +354,8 @@ li {
 
 .icon-hiking {
   position: relative;
-  left: 4px;
-  margin-right: 8px;
+  left: 0px;
+  margin-right: 3px;
   content: var(--hiking);
   vertical-align: middle;
 }

@@ -19,8 +19,6 @@
     title {
       display: none !important;
     }
-
-
   }
 }
 
@@ -137,6 +135,7 @@ p {
 
 .contact-info {
   display: flex;
+  flex-direction: column;
   max-width: 250px;
   text-align: start;
 }
@@ -187,6 +186,7 @@ p {
 
 .education-info {
   display: flex;
+  flex-direction: column;
   line-height: 16px;
 }
 
@@ -197,11 +197,6 @@ p {
   gap: 0.5rem;
 }
 
-.education-info h5,
-.education-info h4 {
-  margin: 0;
-  padding: 0;
-}
 
 .education-header {
   color: var(--light-blue);
@@ -273,7 +268,6 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   position: relative;
-  bottom: 20px;
   min-width: 300px;
   max-height: 120px;
   line-height: 20px;
@@ -284,12 +278,6 @@ p {
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-}
-
-.languages-info h5,
-.languages-info h4 {
-  margin: 0;
-  padding: 0;
 }
 
 .languages-info-header {
@@ -308,7 +296,7 @@ p {
   max-height: 71.5rem;
   position: relative;
   background: var(--white);
-  padding: 2.5rem 4.5rem;
+  padding: 2.5rem 3.5rem;
 }
 
 .about {
@@ -322,17 +310,24 @@ p {
 .expirience-box {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
+  align-items: flex-start;
 }
 
 .expirience-info {
   min-width: 150px;
   text-transform: uppercase;
   color: #848c90;
-  text-align: center;
 }
 
-.expirinece-text h4 {
+.expirinece-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.expirinece-text-item {
   text-transform: uppercase;
   color: #2a7da2;
 }
@@ -341,12 +336,12 @@ p {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 150px 1fr;
   justify-content: center;
   align-content: center;
 }
 
-.skill-box h4 {
+.skill-box_item {
   text-transform: uppercase;
   color: #848c99;
   font-weight: 500;
@@ -354,14 +349,15 @@ p {
 
 .percent {
   position: relative;
-  top: 24.5px;
+  top: 30px;
+  left: 20px;
   width: 100%;
   height: 10px;
   background: #dad6d6;
 }
 
 .percent div {
-  width: 95%;
+  width: 90%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -430,8 +426,8 @@ p {
 .right-side__header {
   color: var(--dark-blue);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
   padding-top: 1.2rem;
 }
 
@@ -449,6 +445,10 @@ p {
 
 .text_size-24 {
   font-size: 24px;
+}
+
+.text_size-32 {
+  font-size: 32px;
 }
 
 .text_weight-300 {

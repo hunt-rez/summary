@@ -29,6 +29,10 @@
   --light-blue: #03a9f4;
   --dark-blue: #003147;
   --dark-gray: #333;
+  --cyan-gray: #848c90;
+  --lighter-blue:#2a7da2;
+  --dark-grayish-blue:#848c99;
+  --light-grayish-red:#dad6d6;
   --main__figure-shadow: rgba(0, 0, 0, .25);
   --text-border-bottom: rgba(255, 255, 255, .2);
   --telegram: url("../img/icons/telegram.svg");
@@ -233,34 +237,28 @@ p {
   font-weight: 400;
 }
 
-.icon-html {
-  position: relative;
+.html {
   content: var(--html);
 }
 
-.icon-css {
-  position: relative;
+.css {
   content: var(--css);
 }
 
-.icon-js {
-  position: relative;
+.js {
   content: var(--js);
 }
 
-.icon-ph {
-  position: relative;
+.ph {
   content: var(--ph);
 }
 
-.icon-resolve {
+.resolve {
   width: 48px;
   height: 48px;
   object-fit: cover;
-  position: relative;
   content: var(--resolve);
-  vertical-align: middle;
-}
+  }
 
 
 .languages-info ul {
@@ -316,7 +314,7 @@ p {
 .expirience-info {
   min-width: 150px;
   text-transform: uppercase;
-  color: #848c90;
+  color: var(--cyan-gray);
 }
 
 .expirinece-text {
@@ -329,7 +327,7 @@ p {
 
 .expirinece-text-item {
   text-transform: uppercase;
-  color: #2a7da2;
+  color: var(--lighter-blue);
 }
 
 .skill-box {
@@ -343,7 +341,7 @@ p {
 
 .skill-box_item {
   text-transform: uppercase;
-  color: #848c99;
+  color: var(--dark-grayish-blue);
   font-weight: 500;
 }
 
@@ -353,7 +351,7 @@ p {
   left: 20px;
   width: 100%;
   height: 10px;
-  background: #dad6d6;
+  background: var(--light-grayish-red);
 }
 
 .percent div {
@@ -362,7 +360,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: #03a9f4;
+  background: var(--light-blue);
 }
 
 .yourself ul {
@@ -373,7 +371,7 @@ p {
 }
 
 .yourself li {
-  color: #848c99;
+  color: var(--dark-grayish-blue);
   font-weight: 400;
 }
 
@@ -382,38 +380,34 @@ p {
   bottom: 10px;
 }
 
-.icon-gaming {
-  position: relative;
+.gaming {
   left: -0.475rem;
   bottom: -5px;
   content: var(--gaming);
-  vertical-align: middle;
 }
 
-.icon-cooking {
-  position: relative;
+.cooking {
   content: var(--cooking);
-  vertical-align: middle;
 }
 
-.icon-books {
-  position: relative;
+.books {
   left: -1px;
   content: var(--books);
-  vertical-align: middle;
 }
 
-.icon-hiking {
-  position: relative;
+.hiking {
   left: -3px;
   content: var(--hiking);
-  vertical-align: middle;
 }
 
 /* mixin */
 
 .font-poppins {
   font-family: 'Poppins', sans-serif;
+}
+
+.icon {
+  position: relative;
 }
 
 .left-side__header {

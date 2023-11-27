@@ -237,33 +237,27 @@ p {
   font-weight: 400;
 }
 
-.icon-html {
-  position: relative;
+.html-svg {
   content: var(--html);
 }
 
-.icon-css {
-  position: relative;
+.css-svg {
   content: var(--css);
 }
 
-.icon-js {
-  position: relative;
+.js-svg {
   content: var(--js);
 }
 
-.icon-ph {
-  position: relative;
+.ph-svg {
   content: var(--ph);
 }
 
-.icon-resolve {
+.resolve-svg {
   width: 48px;
   height: 48px;
   object-fit: cover;
-  position: relative;
   content: var(--resolve);
-  vertical-align: middle;
 }
 
 
@@ -385,38 +379,34 @@ p {
   bottom: 10px;
 }
 
-.icon-gaming {
-  position: relative;
+.gaming-svg {
   left: -0.475rem;
   bottom: -5px;
   content: var(--gaming);
-  vertical-align: middle;
 }
 
-.icon-cooking {
-  position: relative;
+.cooking-svg {
   content: var(--cooking);
-  vertical-align: middle;
 }
 
-.icon-books {
-  position: relative;
+.books-svg {
   left: -1px;
   content: var(--books);
-  vertical-align: middle;
 }
 
-.icon-hiking {
-  position: relative;
+.hiking-svg {
   left: -3px;
   content: var(--hiking);
-  vertical-align: middle;
 }
 
 /* mixin */
 
 .font-poppins {
   font-family: 'Poppins', sans-serif;
+}
+
+.icon {
+  position: relative;
 }
 
 .left-side__header {

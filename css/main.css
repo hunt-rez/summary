@@ -29,6 +29,10 @@
   --light-blue: #03a9f4;
   --dark-blue: #003147;
   --dark-gray: #333;
+  --cyan-gray: #848c90;
+  --lighter-blue: #2a7da2;
+  --dark-grayish-blue: #848c99;
+  --light-grayish-red: #dad6d6;
   --main__figure-shadow: rgba(0, 0, 0, .25);
   --text-border-bottom: rgba(255, 255, 255, .2);
   --telegram: url("../img/icons/telegram.svg");
@@ -140,7 +144,7 @@ p {
   text-align: start;
 }
 
-.contact-info ul {
+.contact-info-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,7 +194,7 @@ p {
   line-height: 16px;
 }
 
-.education-info li {
+.education-info-list-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,7 +215,7 @@ p {
   color: var(--white);
 }
 
-.toolstack ul {
+.toolstack-list {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -220,7 +224,7 @@ p {
   gap: 0.625rem;
 }
 
-.toolstack li {
+.toolstack-list-item {
   max-width: 30px;
   display: flex;
   flex-direction: column;
@@ -263,7 +267,7 @@ p {
 }
 
 
-.languages-info ul {
+.languages-info-list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -273,7 +277,7 @@ p {
   line-height: 20px;
 }
 
-.languages-info li {
+.languages-info-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,14 +313,13 @@ p {
 
 .expirience-box {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
 }
 
 .expirience-info {
   min-width: 150px;
   text-transform: uppercase;
-  color: #848c90;
+  color: var(--cyan-gray);
 }
 
 .expirinece-text {
@@ -329,7 +332,7 @@ p {
 
 .expirinece-text-item {
   text-transform: uppercase;
-  color: #2a7da2;
+  color: var(--lighter-blue);
 }
 
 .skill-box {
@@ -343,7 +346,7 @@ p {
 
 .skill-box_item {
   text-transform: uppercase;
-  color: #848c99;
+  color: var(--dark-grayish-blue);
   font-weight: 500;
 }
 
@@ -353,27 +356,27 @@ p {
   left: 20px;
   width: 100%;
   height: 10px;
-  background: #dad6d6;
+  background: var(--light-grayish-red);
 }
 
-.percent div {
-  width: 90%;
+.percent-item {
+  width: 94%;
   height: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  background: #03a9f4;
+  background: var(--light-blue);
 }
 
-.yourself ul {
+.yourself-list {
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 
-.yourself li {
-  color: #848c99;
+.yourself-list-item {
+  color: var(--dark-grayish-blue);
   font-weight: 400;
 }
 

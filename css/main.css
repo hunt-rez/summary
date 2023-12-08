@@ -7,7 +7,8 @@
   }
 
   .__left-side {
-    padding-left: 5rem !important;
+    padding-left: 6.5rem !important;
+    padding-right: 4rem !important;
   }
 
   @page {
@@ -98,7 +99,8 @@ p {
 }
 
 .__left-side {
-  max-height: 71.5rem;
+  max-width: 290px;
+  max-height: 72rem;
   position: relative;
   background: var(--dark-blue);
   padding: 2.5rem 3.5rem;
@@ -140,7 +142,7 @@ p {
 .contact-info {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
+  max-width: 300px;
   text-align: start;
 }
 
@@ -216,12 +218,13 @@ p {
 }
 
 .toolstack-list {
+  min-width: 300px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  gap: 4.5rem 6rem;
+  gap: 1.5rem 6.5rem;
 }
 
 .toolstack-list-item {
@@ -232,6 +235,7 @@ p {
   text-transform: uppercase;
   color: var(--white);
   font-weight: 400;
+  gap: 1rem;
 }
 
 .html-svg {
@@ -261,9 +265,9 @@ p {
 .languages-info-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
-  min-width: 300px;
+  min-width: 290px;
   max-height: 120px;
   line-height: 20px;
 }
@@ -272,7 +276,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1.5rem 0.5rem;
 }
 
 .languages-info-header {
@@ -288,10 +292,11 @@ p {
 }
 
 .__right-side {
-  max-height: 71.5rem;
+  max-width: 520px;
+  max-height: 72rem;
   position: relative;
   background: var(--white);
-  padding: 2.5rem 3.5rem;
+  padding: 2.5rem 2.5rem;
 }
 
 .about {
@@ -351,7 +356,7 @@ p {
 }
 
 .percent-item {
-  width: 94%;
+  width: 85%;
   height: 100%;
   position: relative;
   top: 0;
@@ -362,8 +367,9 @@ p {
 .yourself-list {
   padding-top: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: stretch;
+  gap: 1.5rem;
 }
 
 .yourself-list-item {
@@ -410,15 +416,14 @@ p {
   color: var(--white);
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding-top: 1.8750rem;
+  padding-top: 1.5rem;
 }
 
 .right-side__header {
   color: var(--dark-blue);
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-bottom: 8px;
-  padding-top: 1.2rem;
+  padding-top: 0.5rem;
 }
 
 .right-side__text {
